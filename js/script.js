@@ -17,16 +17,16 @@ inputFieldFahrenheit.addEventListener('keypress', function(eventFahrenheit){
 })
 
 function startConvert(){
-    if(labelDescCelcius.innerHTML === "Temperature in Celcius (°C):"){
-        let celciusValue=parseInt(inputFieldCelcius.value);
-        let fahrenheitValue = celciusValue * (9/5) + 32;
-        document.getElementById("inputFieldFahrenheit").value = fahrenheitValue;
-        resultText.textContent = "Suhu Celcius x (9/5) + 32";
-    }else{
+    if(labelDescCelcius.innerHTML === "Temperature in Fahrenheit (°F):"){
         let celciusValue=parseInt(inputFieldCelcius.value);
         let fahrenheitValue = (celciusValue - 32) * (5/9);
         document.getElementById("inputFieldFahrenheit").value = fahrenheitValue;
         resultText.textContent = "(Suhu Fahrenheit - 32) x 5/9";
+    }else{
+        let celciusValue=parseInt(inputFieldCelcius.value);
+        let fahrenheitValue = celciusValue * (9/5) + 32;
+        document.getElementById("inputFieldFahrenheit").value = fahrenheitValue;
+        resultText.textContent = "Suhu Celcius x (9/5) + 32";
     }
 }
 
