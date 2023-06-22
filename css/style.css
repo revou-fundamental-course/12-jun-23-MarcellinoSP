@@ -1,0 +1,81 @@
+body{
+    font-family: 'Courier New', Courier, monospace  ;
+    background-color: #9ccdd1;
+}
+header{
+    background-color: #FFD89C;
+    color:grey;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 15px;
+}
+label{
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+/* Buton Properties */
+button{
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 15px 10px;
+    background-color: #85A389 ;
+    color: white;
+}
+button:hover{
+    background-color: #6e8e72;
+}
+button:active{
+    transform: translateY(1px);
+    background-color: #557459;
+}
+/* Input Form Properties */
+#inputFieldCelcius{
+    outline: none;
+    font-size: large;
+    border-color: #84A7A1;
+    background-color: #84A7A1;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+#inputFieldCelcius:focus{
+    border: solid #F1C27B;
+}
+#inputFieldFahrenheit{
+    outline: none;
+    font-size: large;
+    border-color: #84A7A1;
+    background-color: #84A7A1;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#inputFieldFahrenheit:focus{
+    border: solid #F1C27B;
+}
+/* Output Formula Properties */
+#resultText{
+    display:flex;
+    flex-direction: row;
+    background-color: #84A7A1;
+    height: 100px;
+    width: 300px;
+}
+/* Classes */
+.conversionForm{
+    display: flex;
+    flex-direction: column;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 5px;
+}
